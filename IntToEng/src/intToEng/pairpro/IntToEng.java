@@ -9,12 +9,21 @@ public class IntToEng {
 		    }
 	 
 		    static String tlanslateEng(String n) {
-		    	String[] numberLibrary = {
-		    			"","one","two","three","four","five",
-		    			"six","seven","eight","nine","ten",
-		    			"elevn","twelve","therteen","fourteen","fifteen",
-		    			"sixteen","seventeen","eighteen","nineteen","twenty"
+		    	// ƒ‰ƒCƒuƒ‰ƒŠW
+		    	String[] first = {
+		    			"zero","one","two","three","four","five",
+		    			"six","seven","eight","nine","twenty"
 		    	};
+		    	String[] ten = {
+		    			"ten","elevn","twelve","therteen","fourteen","fifteen",
+		    			"sixteen","seventeen","eighteen","nineteen"	
+		    	};
+		    	String[] second = {
+		    			"","","twenty","thirty","fourty","fifty",
+		    			"sixty","seventy","eighty","ninety"
+		    	};
+		    	String[] hundred = { "hundred","hundreds" };
+		    	
 			return "";
 		    }
 
