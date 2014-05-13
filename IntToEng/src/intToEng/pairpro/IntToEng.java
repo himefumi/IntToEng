@@ -24,7 +24,21 @@ public class IntToEng {
 		    	};
 		    	String[] hundred = { "hundred","hundreds" };
 		    	
-			return "";
+		    	int count = 0;
+		    	int[] cn = new int(3);
+		    	char[] change = new char(3);
+		    	String result;
+		    	
+		    	for(int i=0; i<n.length(); i++) {
+		    		change[i]=n.charAt(n.length()-1-i);
+		    	}
+		    	while(count<3 && change[count]!=null) {
+		    		cn[count] = Intger.parseInt(change[2-count]);
+		    		result = first[cn[count]] + result;
+		    		count++;
+		    	}
+		    	
+			return result;
 		    }
 
 }
